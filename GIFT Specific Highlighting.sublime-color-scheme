@@ -1,0 +1,56 @@
+{
+    "name": "GIFT Specific Highlighting",
+    "globals":
+    {
+        "background": "#0a0a0a",
+        "caret": "#CCCCCC",
+        "foreground": "#CCCCCC",
+        "invisibles": "#6A6A6A",
+        "lineHighlight": "#111111",
+        "selection": "#252525",
+        "gutterForeground": "#333333",
+        "guide": "#141414"
+    },
+    "rules": [
+        {
+            "name": "Question Titles",
+            "scope": "entity.name.section.gift.question-title",
+            "foreground": "#FFD700"
+        },
+        {
+            "name": "Questions",
+            "scope": "string.unquoted.gift.question",
+            "foreground": "#40E0D0"
+        },
+        {
+            "name": "Correct Answers",
+            "scope": "keyword.operator.correct-answer.gift",
+            "foreground": "#7CFC00"
+        },
+        {
+            "name": "Incorrect Answers",
+            "scope": "keyword.operator.wrong-answer.gift",
+            "foreground": "#F08080"
+        },
+        {
+            "name": "Feedback/Hints",
+            "scope": "comment.line.hint.gift",
+            "foreground": "#FFFFB0"
+        },
+        {
+            "name": "Curly Braces",
+            "scope": "punctuation.brace.curly.gift",
+            "foreground": "#FFC0CB"
+        },
+        {
+            "name": "Double Forward Slash",
+            "scope": "comment.line.gift",
+            "foreground": "#F4A460"
+        },
+        {
+            "name": "Default Text",
+            "scope": "source.gift",
+            "foreground": "#FFFFFF"
+        }
+    ]
+}

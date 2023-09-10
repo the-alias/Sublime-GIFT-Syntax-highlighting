@@ -1,0 +1,40 @@
+%YAML 1.2
+---
+name: GIFT
+file_extensions:
+  - gift
+scope: source.gift
+
+contexts:
+  main:
+    # Comments
+    - match: '//.*?$'
+      scope: comment.line.gift
+
+    # Question Titles
+    - match: '::(.*?)::'
+      scope: entity.name.section.gift.question-title
+
+    # Questions
+    - match: '(?<=::)(.*?)(?=\{)'
+      scope: string.unquoted.gift.question
+
+    # Correct Answers
+    - match: '=.*?$'
+      scope: keyword.operator.correct-answer.gift
+
+    # Incorrect Answers
+    - match: '~.*?$'
+      scope: keyword.operator.wrong-answer.gift
+
+    # Feedback/Hints
+    - match: '####.*?$'
+      scope: comment.line.hint.gift
+
+    # Curly Braces
+    - match: '[\{\}]'
+      scope: punctuation.brace.curly.gift
+
+    # Other special characters and constructs
+    - match: '\{.*?\}'
+      scope: string.unquoted.gift

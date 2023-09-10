@@ -1,0 +1,6 @@
+// These settings override both User and Default settings for the GIFT syntax
+{
+    "color_scheme": "Packages/User/GIFT Specific Highlighting.sublime-color-scheme",
+    "word_wrap": true,
+    "wrap_width": 0
+}
